@@ -10,7 +10,6 @@ const PageQuantity = dynamic({ component: () => import('./PageQuantity') });
 const PageBasic = dynamic({ component: () => import('./PageBasic') });
 const PageNormal = dynamic({ component: () => import('./PageNormal') });
 const PageDetail = dynamic({ component: () => import('./PageDetail') });
-const pageComment = dynamic({ component: () => import('./pageComment') });
 const PageAbout = dynamic({ component: () => import('./PageAbout') });
 
 const Doc = {
@@ -33,11 +32,6 @@ const Doc = {
     name: 'setting.detail',
     icon: 'idcard',
     component: PageDetail,
-  },
-  '/setting/comment': {
-    name: 'setting.comment',
-    icon: 'message',
-    component: pageComment,
   },
   '/setting/about': {
     name: 'setting.about',
