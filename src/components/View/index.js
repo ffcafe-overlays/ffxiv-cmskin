@@ -1,9 +1,10 @@
 import classnames from 'classnames/bind';
 import { Lang } from '../';
 import style from './index.scss';
+import { history } from '../../history';
 
 const View = ({ transparent, children, ...other }) => {
-  if (window.location.pathname.indexOf('setting') !== -1) transparent = false;
+  if (history.location.pathname.indexOf('setting') !== -1) transparent = false;
   return (
     <div
       className={classnames.bind(style)({

@@ -1,14 +1,14 @@
 import { Message } from './components';
 import dva from 'dva';
 import createLoading from 'dva-loading';
-import createHistory from 'history/createBrowserHistory';
 import Console from './utils/console';
 import Debug from './services/debug';
 import './index.scss';
+import { history } from './history';
 
 // 1. Initialize
 const app = dva({
-  history: createHistory(),
+  history,
   onError(e) {
     Message.error(e.message, 3);
   },
@@ -31,7 +31,7 @@ app.start('#root');
 // 6. Other
 window.debug = false;
 
-if (window.location.search.indexOf('?HOST_PORT=ws://') !== -1) {
+if (window.location.toString().indexOf('?HOST_PORT=ws://') !== -1) {
   window.websocket = true;
   window.wsURL = window.location.href;
 }

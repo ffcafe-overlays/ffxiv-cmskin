@@ -5,6 +5,7 @@ import { Component } from 'react';
 import { View, Message, Lang } from '../../components';
 import { getSetting } from '../../utils/getSetting';
 import style from './index.scss';
+import { setCookie } from '../../services/cookie';
 
 const { Split } = View;
 const Setting = [
@@ -31,7 +32,7 @@ class App extends Component {
       this.props.dispatch(routerRedux.push('/setting/basic'));
     } else {
       const Scale = this.props.uiScaleActive ? this.props.uiScale : 1;
-      window.open('/setting/basic', '设置', `height=${680 * Scale}, width=${480 * Scale}`);
+      window.open('#/setting/basic', '设置', `height=${680 * Scale}, width=${480 * Scale}`);
     }
   };
   handleFullscreen = () => {
@@ -44,12 +45,12 @@ class App extends Component {
   handleRoot = () => {
     Message.info(Lang('setting.message.root'));
     setTimeout(() => {
-      document.cookie = 'setting=false;path=/';
-      document.cookie = 'setting=false';
+      setCookie('setting', null);
       window.location.reload();
     }, 500);
   };
 
+  // eslint-disable-next-line react/no-deprecated
   componentWillMount() {
     this.props.dispatch({ type: 'setting/root' });
     setInterval(() => this.props.dispatch({ type: 'setting/root' }), 2000);

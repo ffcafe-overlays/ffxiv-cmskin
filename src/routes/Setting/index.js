@@ -3,6 +3,7 @@ import dynamic from 'dva/dynamic';
 import { View, Icon, Lang } from '../../components';
 import style from './index.scss';
 import _ from 'lodash';
+import { history } from '../../history';
 
 const { Bar, Header } = View;
 const PageQuantity = dynamic({ component: () => import('./PageQuantity') });
@@ -55,7 +56,7 @@ export default () => {
   return [
     <Header key="header">{Lang('setting.header')}</Header>,
     <Bar key="bar" className={style.bar}>
-      {Lang(Doc[window.location.pathname].name)}
+      {Lang(Doc[history.location.pathname].name)}
     </Bar>,
     <div key="content" className={style.flex}>
       <div className={style.left}>{sidebar}</div>
