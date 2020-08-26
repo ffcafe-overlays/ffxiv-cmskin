@@ -13,16 +13,16 @@ gulp.task('nga', nga);
 gulp.task('html', done => {
   const options = { indentSize: 2 };
   gulp
-    .src('./docs/*.html')
+    .src('./dist/*.html')
     .pipe(htmlbeautify(options))
-    .pipe(gulp.dest('./docs/'));
-  writeFileSync('./docs/.nojekyll', '');
+    .pipe(gulp.dest('./dist/'));
+  writeFileSync('./dist/.nojekyll', '');
   done();
 });
 gulp.task('test', () => {
   const options = {
     server: {
-      baseDir: './docs',
+      baseDir: './dist',
       middleware: [historyApiFallback()],
     },
   };
