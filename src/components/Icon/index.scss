@@ -52,6 +52,10 @@
   + .icon {
     margin-top: 0.5rem;
   }
+  svg {
+    width: 1.5em;
+    height: 100%;
+  }
 }
 .active {
   border: 2px solid $c-yellow-light;
