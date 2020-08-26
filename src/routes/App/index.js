@@ -120,7 +120,7 @@ class App extends Component {
     ) : (
       <div className={$.uiTrans ? style.iconTrans : style.icon} onClick={this.handleFullscreen}>
         <div className={style.iconInner}>
-          <img src="/img/icon.png" />
+          <img src="img/icon.png" />
         </div>
       </div>
     );

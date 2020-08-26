@@ -19,7 +19,7 @@ export default {
 		]
 	},
 	outputPath         : './dist',
-	publicPath         : '/',
+	publicPath         : '',
 	disableCSSModules  : false,
 	hash               : true,
 	ignoreMomentLocale : true,
