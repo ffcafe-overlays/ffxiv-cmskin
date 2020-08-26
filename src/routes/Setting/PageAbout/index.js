@@ -13,7 +13,9 @@ export default class extends Component {
     const mapInfo = (title, data) => [
       <Split key={title + 'split'} className={style.title} id={title} />,
       <div key={title + 'list'} className={style.list}>
-        {data.map(item => <InfoList key={item.title} title={item.title} desc={item.desc} />)}
+        {data.map(item => (
+          <InfoList key={item.title} title={item.title} desc={item.desc} />
+        ))}
       </div>,
     ];
     return [

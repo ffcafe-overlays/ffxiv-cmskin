@@ -9,7 +9,11 @@ const Author = [
   },
   {
     title: 'Online',
-    desc: <a href="https://ffxiv.canisminor.cc">ffxiv.canisminor.cc</a>,
+    desc: (
+      <a href="https://ffxiv.canisminor.cc" target="_blank" rel="noopener noreferrer">
+        ffxiv.canisminor.cc
+      </a>
+    ),
   },
 ];
 
@@ -28,7 +32,11 @@ const Contact = [
   },
   {
     title: 'Site',
-    desc: <a href="https://canisminor.cc">canisminor.cc</a>,
+    desc: (
+      <a href="https://canisminor.cc" target="_blank" rel="noopener noreferrer">
+        canisminor.cc
+      </a>
+    ),
   },
 ];
 
@@ -36,7 +44,11 @@ const Github = [
   {
     title: 'Github',
     desc: (
-      <a href="https://github.com/canisminor1990/ffxiv-cmskin">
+      <a
+        href="https://github.com/canisminor1990/ffxiv-cmskin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         github.com/canisminor1990/ffxiv-cmskin
       </a>
     ),
@@ -44,7 +56,11 @@ const Github = [
   {
     title: 'Coding',
     desc: (
-      <a href="https://git.coding.net/canisminor1990/ffxiv-cmskin.git">
+      <a
+        href="https://git.coding.net/canisminor1990/ffxiv-cmskin.git"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         coding.net/canisminor1990/ffxiv-cmskin
       </a>
     ),
@@ -52,7 +68,9 @@ const Github = [
   {
     title: 'NGA',
     desc: (
-      <a href="http://bbs.ngacn.cc/read.php?tid=12689516">bbs.ngacn.cc/read.php?tid=12689516</a>
+      <a href="http://bbs.ngacn.cc/read.php?tid=12689516" target="_blank" rel="noopener noreferrer">
+        bbs.ngacn.cc/read.php?tid=12689516
+      </a>
     ),
   },
   {
@@ -64,22 +82,38 @@ const Github = [
 const Link = [
   {
     title: '素素攻略站',
-    desc: <a href="https://www.ffxiv.cn/">ffxiv.cn</a>,
+    desc: (
+      <a href="https://www.ffxiv.cn/" target="_blank" rel="noopener noreferrer">
+        ffxiv.cn
+      </a>
+    ),
   },
   {
     title: '中文Wiki',
-    desc: <a href="http://ff14.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5/">ff14.huijiwiki.com</a>,
+    desc: (
+      <a
+        href="http://ff14.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ff14.huijiwiki.com
+      </a>
+    ),
   },
   {
     title: 'ACT整合',
     desc: (
-      <a href="http://bbs.ngacn.cc/read.php?tid=12526945">bbs.ngacn.cc/read.php?tid=12526945</a>
+      <a href="http://bbs.ngacn.cc/read.php?tid=12526945" target="_blank" rel="noopener noreferrer">
+        bbs.ngacn.cc/read.php?tid=12526945
+      </a>
     ),
   },
   {
     title: 'ACT时间轴',
     desc: (
-      <a href="http://bbs.ngacn.cc/read.php?tid=12766323">bbs.ngacn.cc/read.php?tid=12766323</a>
+      <a href="http://bbs.ngacn.cc/read.php?tid=12766323" target="_blank" rel="noopener noreferrer">
+        bbs.ngacn.cc/read.php?tid=12766323
+      </a>
     ),
   },
 ];

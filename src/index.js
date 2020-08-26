@@ -5,6 +5,7 @@ import Console from './utils/console';
 import Debug from './services/debug';
 import './index.scss';
 import { history } from './history';
+import { hookAllExternal } from './utils/openExternalLink';
 
 // 1. Initialize
 const app = dva({
@@ -35,6 +36,8 @@ if (window.location.toString().indexOf('?HOST_PORT=ws://') !== -1) {
   window.websocket = true;
   window.wsURL = window.location.href;
 }
+
+hookAllExternal();
 
 if ($isDev) {
   Debug();
