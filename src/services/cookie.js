@@ -1,15 +1,19 @@
+const LS_PREFIX = 'ffxivCmskin-';
+
 const setCookie = (name, value) => {
-  const Days = 30;
-  const exp = new Date();
-  exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
-  document.cookie = `${name}=${JSON.stringify(value)};expires=${exp.toGMTString()};path=/`;
+  window.localStorage[LS_PREFIX + name] = JSON.stringify(value);
 };
 
 const getCookie = name => {
-  const reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)');
-  let arr;
-  if ((arr = document.cookie.match(reg))) return JSON.parse(arr[2]);
-  else return null;
+  const res = window.localStorage[LS_PREFIX + name];
+  if (!res) {
+    return null;
+  }
+  try {
+    return JSON.parse(res);
+  } catch (e) {
+    return null;
+  }
 };
 
 export { setCookie, getCookie };
