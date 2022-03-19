@@ -209,6 +209,8 @@ export default {
   'role.gla': 'Gla',
   'role.pld': 'Pld',
   'role.gnb': 'Gnb',
+  'role.rpr': 'Rpr',
+  'role.sge': 'Sge',
   'role.chocobo': 'Chocobo',
   'role.limitbreak': 'LimitBreak',
   // encounter
