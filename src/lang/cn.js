@@ -224,6 +224,8 @@ export default {
   'role.gnb': '绝枪',
   'role.rpr': '钐镰',
   'role.sge': '贤者',
+  'role.pct': '画家',
+  'role.vpr': '蝰蛇',
   'role.chocobo': '陆行鸟',
   'role.limitbreak': '极限技',
   // name list of NPC

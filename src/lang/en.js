@@ -211,6 +211,8 @@ export default {
   'role.gnb': 'Gnb',
   'role.rpr': 'Rpr',
   'role.sge': 'Sge',
+  'role.pct': 'Pct',
+  'role.vpr': 'Vpr',
   'role.chocobo': 'Chocobo',
   'role.limitbreak': 'LimitBreak',
   // encounter
